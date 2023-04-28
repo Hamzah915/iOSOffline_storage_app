@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5342C5F29F9366100374194 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5342C5E29F9366100374194 /* ContentView.swift */; };
+		B5342C6129F9366400374194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5342C6029F9366400374194 /* Assets.xcassets */; };
+		B5342C6429F9366400374194 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5342C6329F9366400374194 /* Preview Assets.xcassets */; };
+		B5342C6629F9366400374194 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5342C6529F9366400374194 /* Persistence.swift */; };
+		B5342C6929F9366400374194 /* iOSOfflineStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5342C6729F9366400374194 /* iOSOfflineStorage.xcdatamodeld */; };
+		B5342C7329F9366400374194 /* iOSOfflineStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5342C7229F9366400374194 /* iOSOfflineStorageTests.swift */; };
+		B5342C7D29F9366400374194 /* iOSOfflineStorageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5342C7C29F9366400374194 /* iOSOfflineStorageUITests.swift */; };
+		B5342C7F29F9366400374194 /* iOSOfflineStorageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5342C7E29F9366400374194 /* iOSOfflineStorageUITestsLaunchTests.swift */; };
+		B55F77D129FA8497006FBD15 /* CoreDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F77D029FA8497006FBD15 /* CoreDataProtocol.swift */; };
+		B55F77D329FA853D006FBD15 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F77D229FA853D006FBD15 /* CoreDataManager.swift */; };
+		B55F77D529FA9FA8006FBD15 /* iOSOfflineStorageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F77D429FA9FA8006FBD15 /* iOSOfflineStorageApp.swift */; };
+		B55F77D729FA9FAA006FBD15 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F77D629FA9FAA006FBD15 /* StartView.swift */; };
+		B55F77D929FA9FB1006FBD15 /* UserDefaultsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F77D829FA9FB1006FBD15 /* UserDefaultsScreen.swift */; };
+		B5A8451D29FAA60100B3749E /* KeyChainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8451C29FAA60100B3749E /* KeyChainScreen.swift */; };
+		B5A8452C29FACE5200B3749E /* PokemonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8452B29FACE5100B3749E /* PokemonListView.swift */; };
+		B5A8452E29FBD0AC00B3749E /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8452D29FBD0AC00B3749E /* PokemonViewModel.swift */; };
+		B5A8453029FBD0FF00B3749E /* PokemonListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8452F29FBD0FF00B3749E /* PokemonListCell.swift */; };
+		B5A8453229FBD12600B3749E /* PokemonDetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8453129FBD12600B3749E /* PokemonDetailsPage.swift */; };
+		B5A8453429FBD14800B3749E /* PokemonDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8453329FBD14800B3749E /* PokemonDataModel.swift */; };
+		B5A8453629FBD16500B3749E /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8453529FBD16500B3749E /* APIEndPoint.swift */; };
+		B5EB9B5E29FBD19D00726FFE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB9B5D29FBD19D00726FFE /* NetworkManager.swift */; };
+		B5EB9B6029FBD1BD00726FFE /* NetworkableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB9B5F29FBD1BD00726FFE /* NetworkableProtocol.swift */; };
+		B5EB9B6229FBD1E100726FFE /* NetworkErrorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB9B6129FBD1E100726FFE /* NetworkErrorEnum.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5342C6F29F9366400374194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5342C5129F9366100374194 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5342C5829F9366100374194;
+			remoteInfo = iOSOfflineStorage;
+		};
+		B5342C7929F9366400374194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5342C5129F9366100374194 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5342C5829F9366100374194;
+			remoteInfo = iOSOfflineStorage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5342C5929F9366100374194 /* iOSOfflineStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSOfflineStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5342C5E29F9366100374194 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B5342C6029F9366400374194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5342C6329F9366400374194 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5342C6529F9366400374194 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		B5342C6829F9366400374194 /* iOSOfflineStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSOfflineStorage.xcdatamodel; sourceTree = "<group>"; };
+		B5342C6E29F9366400374194 /* iOSOfflineStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSOfflineStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5342C7229F9366400374194 /* iOSOfflineStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSOfflineStorageTests.swift; sourceTree = "<group>"; };
+		B5342C7829F9366400374194 /* iOSOfflineStorageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSOfflineStorageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5342C7C29F9366400374194 /* iOSOfflineStorageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSOfflineStorageUITests.swift; sourceTree = "<group>"; };
+		B5342C7E29F9366400374194 /* iOSOfflineStorageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSOfflineStorageUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B55F77D029FA8497006FBD15 /* CoreDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProtocol.swift; sourceTree = "<group>"; };
+		B55F77D229FA853D006FBD15 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		B55F77D429FA9FA8006FBD15 /* iOSOfflineStorageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSOfflineStorageApp.swift; sourceTree = "<group>"; };
+		B55F77D629FA9FAA006FBD15 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		B55F77D829FA9FB1006FBD15 /* UserDefaultsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsScreen.swift; sourceTree = "<group>"; };
+		B5A8451C29FAA60100B3749E /* KeyChainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainScreen.swift; sourceTree = "<group>"; };
+		B5A8452B29FACE5100B3749E /* PokemonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListView.swift; sourceTree = "<group>"; };
+		B5A8452D29FBD0AC00B3749E /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
+		B5A8452F29FBD0FF00B3749E /* PokemonListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListCell.swift; sourceTree = "<group>"; };
+		B5A8453129FBD12600B3749E /* PokemonDetailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailsPage.swift; sourceTree = "<group>"; };
+		B5A8453329FBD14800B3749E /* PokemonDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDataModel.swift; sourceTree = "<group>"; };
+		B5A8453529FBD16500B3749E /* APIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = "<group>"; };
+		B5EB9B5D29FBD19D00726FFE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B5EB9B5F29FBD1BD00726FFE /* NetworkableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkableProtocol.swift; sourceTree = "<group>"; };
+		B5EB9B6129FBD1E100726FFE /* NetworkErrorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorEnum.swift; sourceTree = "<group>"; };
+		B5EB9B6729FBDB5C00726FFE /* iOSOfflineStorage V2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "iOSOfflineStorage V2.xcdatamodel"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5342C5629F9366100374194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5342C6B29F9366400374194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5342C7529F9366400374194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5342C5029F9366100374194 = {
+			isa = PBXGroup;
+			children = (
+				B5342C5B29F9366100374194 /* iOSOfflineStorage */,
+				B5342C7129F9366400374194 /* iOSOfflineStorageTests */,
+				B5342C7B29F9366400374194 /* iOSOfflineStorageUITests */,
+				B5342C5A29F9366100374194 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5342C5A29F9366100374194 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5342C5929F9366100374194 /* iOSOfflineStorage.app */,
+				B5342C6E29F9366400374194 /* iOSOfflineStorageTests.xctest */,
+				B5342C7829F9366400374194 /* iOSOfflineStorageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5342C5B29F9366100374194 /* iOSOfflineStorage */ = {
+			isa = PBXGroup;
+			children = (
+				B5EB9B6629FBD2FB00726FFE /* Network */,
+				B5EB9B6529FBD2D200726FFE /* ViewModel */,
+				B5EB9B6429FBD2BF00726FFE /* View */,
+				B5EB9B6329FBD2AF00726FFE /* Model */,
+				B55F77CF29FA8461006FBD15 /* CoreData */,
+				B5342C5E29F9366100374194 /* ContentView.swift */,
+				B55F77D429FA9FA8006FBD15 /* iOSOfflineStorageApp.swift */,
+				B55F77D629FA9FAA006FBD15 /* StartView.swift */,
+				B55F77D829FA9FB1006FBD15 /* UserDefaultsScreen.swift */,
+				B5A8451C29FAA60100B3749E /* KeyChainScreen.swift */,
+				B5342C6029F9366400374194 /* Assets.xcassets */,
+				B5342C6529F9366400374194 /* Persistence.swift */,
+				B5342C6729F9366400374194 /* iOSOfflineStorage.xcdatamodeld */,
+				B5342C6229F9366400374194 /* Preview Content */,
+			);
+			path = iOSOfflineStorage;
+			sourceTree = "<group>";
+		};
+		B5342C6229F9366400374194 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B5342C6329F9366400374194 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5342C7129F9366400374194 /* iOSOfflineStorageTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5342C7229F9366400374194 /* iOSOfflineStorageTests.swift */,
+			);
+			path = iOSOfflineStorageTests;
+			sourceTree = "<group>";
+		};
+		B5342C7B29F9366400374194 /* iOSOfflineStorageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5342C7C29F9366400374194 /* iOSOfflineStorageUITests.swift */,
+				B5342C7E29F9366400374194 /* iOSOfflineStorageUITestsLaunchTests.swift */,
+			);
+			path = iOSOfflineStorageUITests;
+			sourceTree = "<group>";
+		};
+		B55F77CF29FA8461006FBD15 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B55F77D029FA8497006FBD15 /* CoreDataProtocol.swift */,
+				B55F77D229FA853D006FBD15 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B5EB9B6329FBD2AF00726FFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5A8453329FBD14800B3749E /* PokemonDataModel.swift */,
+				B5A8453529FBD16500B3749E /* APIEndPoint.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5EB9B6429FBD2BF00726FFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5A8452F29FBD0FF00B3749E /* PokemonListCell.swift */,
+				B5A8452B29FACE5100B3749E /* PokemonListView.swift */,
+				B5A8453129FBD12600B3749E /* PokemonDetailsPage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5EB9B6529FBD2D200726FFE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B5A8452D29FBD0AC00B3749E /* PokemonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B5EB9B6629FBD2FB00726FFE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B5EB9B5D29FBD19D00726FFE /* NetworkManager.swift */,
+				B5EB9B5F29FBD1BD00726FFE /* NetworkableProtocol.swift */,
+				B5EB9B6129FBD1E100726FFE /* NetworkErrorEnum.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5342C5829F9366100374194 /* iOSOfflineStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5342C8229F9366400374194 /* Build configuration list for PBXNativeTarget "iOSOfflineStorage" */;
+			buildPhases = (
+				B5342C5529F9366100374194 /* Sources */,
+				B5342C5629F9366100374194 /* Frameworks */,
+				B5342C5729F9366100374194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSOfflineStorage;
+			productName = iOSOfflineStorage;
+			productReference = B5342C5929F9366100374194 /* iOSOfflineStorage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5342C6D29F9366400374194 /* iOSOfflineStorageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5342C8529F9366400374194 /* Build configuration list for PBXNativeTarget "iOSOfflineStorageTests" */;
+			buildPhases = (
+				B5342C6A29F9366400374194 /* Sources */,
+				B5342C6B29F9366400374194 /* Frameworks */,
+				B5342C6C29F9366400374194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5342C7029F9366400374194 /* PBXTargetDependency */,
+			);
+			name = iOSOfflineStorageTests;
+			productName = iOSOfflineStorageTests;
+			productReference = B5342C6E29F9366400374194 /* iOSOfflineStorageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5342C7729F9366400374194 /* iOSOfflineStorageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5342C8829F9366400374194 /* Build configuration list for PBXNativeTarget "iOSOfflineStorageUITests" */;
+			buildPhases = (
+				B5342C7429F9366400374194 /* Sources */,
+				B5342C7529F9366400374194 /* Frameworks */,
+				B5342C7629F9366400374194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5342C7A29F9366400374194 /* PBXTargetDependency */,
+			);
+			name = iOSOfflineStorageUITests;
+			productName = iOSOfflineStorageUITests;
+			productReference = B5342C7829F9366400374194 /* iOSOfflineStorageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5342C5129F9366100374194 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					B5342C5829F9366100374194 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					B5342C6D29F9366400374194 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = B5342C5829F9366100374194;
+					};
+					B5342C7729F9366400374194 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = B5342C5829F9366100374194;
+					};
+				};
+			};
+			buildConfigurationList = B5342C5429F9366100374194 /* Build configuration list for PBXProject "iOSOfflineStorage" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5342C5029F9366100374194;
+			productRefGroup = B5342C5A29F9366100374194 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5342C5829F9366100374194 /* iOSOfflineStorage */,
+				B5342C6D29F9366400374194 /* iOSOfflineStorageTests */,
+				B5342C7729F9366400374194 /* iOSOfflineStorageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5342C5729F9366100374194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5342C6429F9366400374194 /* Preview Assets.xcassets in Resources */,
+				B5342C6129F9366400374194 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5342C6C29F9366400374194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5342C7629F9366400374194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5342C5529F9366100374194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A8452C29FACE5200B3749E /* PokemonListView.swift in Sources */,
+				B5A8453029FBD0FF00B3749E /* PokemonListCell.swift in Sources */,
+				B5A8451D29FAA60100B3749E /* KeyChainScreen.swift in Sources */,
+				B55F77D129FA8497006FBD15 /* CoreDataProtocol.swift in Sources */,
+				B5EB9B5E29FBD19D00726FFE /* NetworkManager.swift in Sources */,
+				B5342C6629F9366400374194 /* Persistence.swift in Sources */,
+				B55F77D929FA9FB1006FBD15 /* UserDefaultsScreen.swift in Sources */,
+				B5A8453229FBD12600B3749E /* PokemonDetailsPage.swift in Sources */,
+				B5EB9B6229FBD1E100726FFE /* NetworkErrorEnum.swift in Sources */,
+				B5EB9B6029FBD1BD00726FFE /* NetworkableProtocol.swift in Sources */,
+				B5A8453429FBD14800B3749E /* PokemonDataModel.swift in Sources */,
+				B5342C6929F9366400374194 /* iOSOfflineStorage.xcdatamodeld in Sources */,
+				B55F77D529FA9FA8006FBD15 /* iOSOfflineStorageApp.swift in Sources */,
+				B55F77D329FA853D006FBD15 /* CoreDataManager.swift in Sources */,
+				B5A8453629FBD16500B3749E /* APIEndPoint.swift in Sources */,
+				B5A8452E29FBD0AC00B3749E /* PokemonViewModel.swift in Sources */,
+				B5342C5F29F9366100374194 /* ContentView.swift in Sources */,
+				B55F77D729FA9FAA006FBD15 /* StartView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5342C6A29F9366400374194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5342C7329F9366400374194 /* iOSOfflineStorageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5342C7429F9366400374194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5342C7F29F9366400374194 /* iOSOfflineStorageUITestsLaunchTests.swift in Sources */,
+				B5342C7D29F9366400374194 /* iOSOfflineStorageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5342C7029F9366400374194 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5342C5829F9366100374194 /* iOSOfflineStorage */;
+			targetProxy = B5342C6F29F9366400374194 /* PBXContainerItemProxy */;
+		};
+		B5342C7A29F9366400374194 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5342C5829F9366100374194 /* iOSOfflineStorage */;
+			targetProxy = B5342C7929F9366400374194 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B5342C8029F9366400374194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5342C8129F9366400374194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5342C8329F9366400374194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSOfflineStorage/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ITC.iOSOfflineStorage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5342C8429F9366400374194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSOfflineStorage/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ITC.iOSOfflineStorage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5342C8629F9366400374194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ITC.iOSOfflineStorageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSOfflineStorage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOSOfflineStorage";
+			};
+			name = Debug;
+		};
+		B5342C8729F9366400374194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ITC.iOSOfflineStorageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSOfflineStorage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOSOfflineStorage";
+			};
+			name = Release;
+		};
+		B5342C8929F9366400374194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ITC.iOSOfflineStorageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSOfflineStorage;
+			};
+			name = Debug;
+		};
+		B5342C8A29F9366400374194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ITC.iOSOfflineStorageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSOfflineStorage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5342C5429F9366100374194 /* Build configuration list for PBXProject "iOSOfflineStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5342C8029F9366400374194 /* Debug */,
+				B5342C8129F9366400374194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5342C8229F9366400374194 /* Build configuration list for PBXNativeTarget "iOSOfflineStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5342C8329F9366400374194 /* Debug */,
+				B5342C8429F9366400374194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5342C8529F9366400374194 /* Build configuration list for PBXNativeTarget "iOSOfflineStorageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5342C8629F9366400374194 /* Debug */,
+				B5342C8729F9366400374194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5342C8829F9366400374194 /* Build configuration list for PBXNativeTarget "iOSOfflineStorageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5342C8929F9366400374194 /* Debug */,
+				B5342C8A29F9366400374194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B5342C6729F9366400374194 /* iOSOfflineStorage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B5EB9B6729FBDB5C00726FFE /* iOSOfflineStorage V2.xcdatamodel */,
+				B5342C6829F9366400374194 /* iOSOfflineStorage.xcdatamodel */,
+			);
+			currentVersion = B5EB9B6729FBDB5C00726FFE /* iOSOfflineStorage V2.xcdatamodel */;
+			path = iOSOfflineStorage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B5342C5129F9366100374194 /* Project object */;
+}

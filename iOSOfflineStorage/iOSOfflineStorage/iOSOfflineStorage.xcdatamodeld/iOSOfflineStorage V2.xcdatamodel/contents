@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22E252" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="PokemonIDS" representedClassName="PokemonIDS" syncable="YES" codeGenerationType="class">
+        <attribute name="pokemonIDString" optional="YES" attributeType="String"/>
+        <relationship name="toPokemonModelEntity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PokemonModelEntity" inverseName="toPokemonIDS" inverseEntity="PokemonModelEntity"/>
+    </entity>
+    <entity name="PokemonModelEntity" representedClassName="PokemonModelEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="pokemonName" optional="YES" attributeType="String" elementID="name"/>
+        <relationship name="toPokemonIDS" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PokemonIDS" inverseName="toPokemonModelEntity" inverseEntity="PokemonIDS"/>
+    </entity>
+</model>
